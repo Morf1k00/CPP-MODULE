@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 15:20:09 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/11/26 15:20:11 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/11/26 15:31:01 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,4 @@ int main(int arc, char **arv)
 	}
 	else
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
-	
 }
