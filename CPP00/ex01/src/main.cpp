@@ -6,11 +6,11 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:04:29 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/02 18:00:25 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:02:32 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/Phonebook.hpp"
+#include "../inc/PhoneBook.hpp"
 #include "../inc/Contact.hpp"
 
 int main()

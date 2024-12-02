@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:47:53 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/02 18:06:55 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:17:59 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ class PhoneBook
 		void addContact();
 		void displayAllContact()const;
 		void displayContact(int index)const;
+		void addContactLess8();
+		void addContactBigger8();
 };
 
 #endif

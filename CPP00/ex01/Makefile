@@ -6,7 +6,7 @@
 #    By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/26 15:21:30 by rkrechun          #+#    #+#              #
-#    Updated: 2024/12/02 18:04:13 by rkrechun         ###   ########.fr        #
+#    Updated: 2024/12/02 19:13:05 by rkrechun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
+	@echo "$(GREEN)Program Created!$(RESET)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(OBJ_DIR)
@@ -38,10 +39,17 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 
 clean:
 	@$(RM) $(OBJ_DIR)
+	@echo "$(YELLOW)Object file delete! $(RESET)"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@echo "$(RED)Program delete! $(RESET)"
 
 re: fclean all
 
 .PHONY: all clean fclean re
+
+GREEN = \033[0;32m
+YELLOW = \033[0;33m
+RED = \033[38;5;196m
+RESET = \033[0m

@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 13:33:20 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/02 18:05:08 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/02 19:18:59 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,40 @@ PhoneBook::~PhoneBook(){
 	
 }
 
-
 void PhoneBook :: addContact()
 {
+	if (contactCount < 8)
+		addContact();
+	else
+		addContactBigger8();
+}
 
+void PhoneBook :: addContactBigger8(){
+	std::string name;
+	std::string surname;
+	std::string nick;
+	std::string phone;
+	std::string secret;
+	
+	std::cout << "Write first name :  ";
+	std::getline(std::cin, name);
+	std::cout << "Write last name :  ";
+	std::getline(std::cin, surname);
+	std::cout << "Write nickname :  ";
+	std::getline(std::cin, nick);
+	std::cout << "Write phonenumber :  ";
+	std::getline(std::cin, phone);
+	std::cout << "Write darkest Secret :  ";
+	std::getline(std::cin, secret);
+	
+	Contact newContact(name, surname, nick, phone, secret);
+	m_contacts[contactCount]= newContact;
+	contactCount++;
+	std:: cout << "Contact added succesfully!"<< std::endl;
+}
+
+void PhoneBook :: addContactLess8()
+{
 	std::string name;
 	std::string surname;
 	std::string nick;
