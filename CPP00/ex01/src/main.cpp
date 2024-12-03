@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:04:29 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/03 17:50:46 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/03 17:53:45 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main()
 			std::getline(std::cin, command);
 			if (std::isdigit(command[0]) && command.length() == 1){
 				int i = ::atoi(command.c_str());
-				if (i >=0 && i < 8)
+				if (i >= 0 && i < 8)
 					phonebook.displayContact(i);
 				else
 					std::cout << "Invalid index! Pleaase write number between 0 and 7 or write correct ALL!" << std::endl; 

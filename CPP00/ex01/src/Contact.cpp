@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:00:30 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/02 17:58:26 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/03 17:54:00 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ Contact::~Contact(){
 std::string truncateString(const std:: string& text, size_t len)
 {
 	if (text.size() > len)
-		return(text.substr(0, len - 3) + "...");
+		return(text.substr(0, len - 1) + ".");
 	return(text);
 }
 
