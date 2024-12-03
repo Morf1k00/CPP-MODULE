@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:04:29 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/02 19:02:32 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/03 17:50:46 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int main()
 			phonebook.addContact();
 		else if (command == "SEARCH")
 		{
-			std::cout << "Write index Contact(0 - 7) or ALL :  ";
+			std::cout << "Write index Contact (0 - 7) or ALL :  ";
 			std::getline(std::cin, command);
 			if (std::isdigit(command[0]) && command.length() == 1){
 				int i = ::atoi(command.c_str());
