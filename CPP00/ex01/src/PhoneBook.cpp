@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 13:33:20 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/03 16:28:07 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/04 13:33:55 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,42 +52,42 @@ void PhoneBook :: addContact()
 	std::string phone;
 	std::string secret;
 	do{
-		std::cout << "Write first name :  ";
+		std::cout << BLUE "Write first name :  " RESET;
 		std::getline(std::cin, name);
 		if (!isAlpha(name))
-			std::cout << "Name should contain aplhabetic character or only spaces!"<< std::endl;
+			std::cout << RED "Name should contain aplhabetic character or only spaces!" RESET << std::endl;
 		else if (name.empty())
-			std::cout << "Name cannot be empty!"<< std::endl;
+			std::cout << RED "Name cannot be empty!" RESET<< std::endl;
 	}while(!isAlpha(name) || name.empty());
 	do{
-		std::cout << "Write last name :  ";
+		std::cout << BLUE "Write last name :  " RESET;
 		std::getline(std::cin, surname);
 		if (!isAlpha(surname))
-			std::cout << "Surname should contain aplhabetic character or only spaces!"<< std::endl;
+			std::cout << RED "Surname should contain aplhabetic character or only spaces!" RESET << std::endl;
 		else if (surname.empty())
-			std::cout << "Surname cannot be empty!"<< std::endl;
+			std::cout << RED "Surname cannot be empty!" RESET << std::endl;
 	}while(!isAlpha(surname) || surname.empty());
 	do{
-		std::cout << "Write nickname :  ";
+		std::cout << BLUE "Write nickname :  " RESET;
 		std::getline(std::cin, nick);
 		if (!isAlpha(nick))
-			std::cout << "Nickname should contain aplhabetic character or only spaces!"<< std::endl;
+			std::cout << RED "Nickname should contain aplhabetic character or only spaces!"<< std::endl;
 		else if (nick.empty())
-			std::cout << "Nickname cannot be empty!"<< std::endl;
+			std::cout << RED "Nickname cannot be empty!" RESET << std::endl;
 	}while(!isAlpha(nick) || nick.empty());
 	do{
-		std::cout << "Write phonenumber :  ";
+		std::cout << BLUE "Write phonenumber :  " RESET;
 		std::getline(std::cin, phone);
 		if (!isNum(phone))
-			std::cout << "Phonenumber should contain numeric character or only spaces!"<< std::endl;
+			std::cout << RED "Phonenumber should contain numeric character or only spaces!"<< std::endl;
 		else if (phone.empty())
-			std::cout << "Phonenumber cannot be empty!"<< std::endl;
+			std::cout << RED "Phonenumber cannot be empty!" RESET << std::endl;
 	}while(!isNum(phone) || phone.empty());
 	do{
-		std::cout << "Write darkest Secret :  ";
+		std::cout << BLUE "Write darkest Secret :  " RESET;
 		std::getline(std::cin, secret);
 		if (secret.empty())
-			std::cout << "Darknest Secret cannot be empty!" << std::endl;
+			std::cout << RED "Darknest Secret cannot be empty!" RESET << std::endl;
 	}while(secret.empty() || isSpace(secret));
 	
 	Contact newContact(name, surname, nick, phone, secret);
@@ -100,17 +100,17 @@ void PhoneBook :: addContact()
 			m_contacts[i] = m_contacts[i+1];
 		m_contacts[7] = newContact;
 	}
-	std:: cout << "Contact added succesfully!"<< std::endl;
+	std:: cout << GREEN "Contact added succesfully!" RESET << std::endl;
 }
 
 void PhoneBook :: displayAllContact()const
 {
-	std::cout << std::right <<std ::setw(10) << "INDEX" << "|"
-			<< std::setw(10) << "First Name" << "|"
-			<< std::setw(10) << "Last Name" << "|"
-			<< std::setw(10) << "Nickname" << "|" << std::endl;
-	std::cout << "--------------------------------------------"<< std::endl;
 	if (contactCount != 0){
+		std::cout << std::right <<std ::setw(10) << "INDEX" << "|"
+				<< std::setw(10) << "First Name" << "|"
+				<< std::setw(10) << "Last Name" << "|"
+				<< std::setw(10) << "Nickname" << "|" << std::endl;
+		std::cout << "--------------------------------------------"<< std::endl;
 		for (int i = 0; i < contactCount; i++){
 			m_contacts[i].displayContact(i);
 			std::cout << "--------------------------------------------"<< std::endl;
@@ -124,7 +124,7 @@ void PhoneBook :: displayContact(int index)const
 {
 	if (index < 0 || index >= contactCount)
 	{
-		std::cout << "invalid index!" << std::endl;
+		std::cout << RED "invalid index!" RESET << std::endl;
 		return;
 	}
 	m_contacts[index].displayFull();

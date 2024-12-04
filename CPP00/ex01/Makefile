@@ -6,7 +6,7 @@
 #    By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/26 15:21:30 by rkrechun          #+#    #+#              #
-#    Updated: 2024/12/02 19:13:05 by rkrechun         ###   ########.fr        #
+#    Updated: 2024/12/04 13:21:44 by rkrechun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ re: fclean all
 
 .PHONY: all clean fclean re
 
-GREEN = \033[0;32m
-YELLOW = \033[0;33m
-RED = \033[38;5;196m
+GREEN = \033[1;32m
+YELLOW = \033[1;33m
+RED = \033[1m\033[38;5;196m
 RESET = \033[0m

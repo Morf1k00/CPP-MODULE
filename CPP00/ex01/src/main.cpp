@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 14:04:29 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/03 17:53:45 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/04 13:36:35 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ int main()
 				if (i >= 0 && i < 8)
 					phonebook.displayContact(i);
 				else
-					std::cout << "Invalid index! Pleaase write number between 0 and 7 or write correct ALL!" << std::endl; 
+					std::cout << RED "Invalid index! Pleaase write number between 0 and 7 or write correct ALL!" RESET<< std::endl; 
 			}
 			else if(command == "ALL")
 				phonebook.displayAllContact();
 		}
 		else if (command == "EXIT"){
-			std::cout << "PhoneBook is close!" << std::endl;
+			std::cout << ORANGE "PhoneBook is close!" RESET << std::endl;
 			break;
 		}
 		else	

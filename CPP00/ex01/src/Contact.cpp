@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:00:30 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/03 17:54:00 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/04 13:30:50 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ void Contact::displayContact(int index)const{
 }
 
 void Contact::displayFull()const{
-	std::cout << "First name: " << m_firstname << std ::endl;
-	std::cout << "Last name: " << m_lastname << std::endl;
-	std::cout << "Nickname: " << m_nickname << std::endl;
-	std::cout << "Phone number: " << m_phonenumber << std::endl;
-	std::cout << "Darknest Secret: " << m_darknestsecret<< std:: endl;
+	std::cout << MINT "First name: " RESET << m_firstname << std ::endl;
+	std::cout << MINT "Last name: " RESET << m_lastname << std::endl;
+	std::cout << MINT "Nickname: " RESET << m_nickname << std::endl;
+	std::cout << MINT "Phone number: " RESET << m_phonenumber << std::endl;
+	std::cout << MINT "Darknest Secret: " RESET << m_darknestsecret<< std:: endl;
 }
