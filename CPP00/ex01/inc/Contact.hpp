@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:00:48 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/04 13:29:44 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/05 14:15:03 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,18 @@
 #ifndef CONTACT_HPP
 #define CONTACT_HPP
 
-#define RED "\033[1m\033[31m"
-#define GREEN "\033[1m\033[32m"
-#define BLUE "\033[1m\033[34m"
-#define ORANGE "\033[1m\033[38;5;214m"
-#define MINT "\033[1m\033[38;5;122m"
-#define RESET "\033[0m"
-
 #include <iostream>
 #include <string>
 #include <iomanip>
 #include <cstdlib>
+
+#define RED 	"\033[1m\033[31m"
+#define GREEN 	"\033[1m\033[32m"
+#define WHITE	"\033[1m\033[38;5;15m"
+#define BLUE 	"\033[1m\033[34m"
+#define ORANGE 	"\033[1m\033[38;5;214m"
+#define MINT 	"\033[1m\033[38;5;122m"
+#define RESET 	"\033[0m"
 
 class Contact
 {

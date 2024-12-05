@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 13:33:20 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/04 13:33:55 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/05 14:18:40 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@ void PhoneBook :: displayAllContact()const
 		}	
 	}
 	else
-		std::cout << "PhoneBook is empty" << std::endl;
+		std::cout << RED "PhoneBook is empty" RESET<< std::endl;
 }
 
 void PhoneBook :: displayContact(int index)const
