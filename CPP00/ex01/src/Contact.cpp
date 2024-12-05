@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 15:00:30 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/04 13:30:50 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/05 14:24:04 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ void Contact::displayContact(int index)const{
 			<< std::setw(10) << truncateString(m_lastname, 10) << "|"
 			<< std::setw(10) << truncateString(m_nickname, 10) << "|"
 			<< std::endl;
-	
 }
 
 void Contact::displayFull()const{

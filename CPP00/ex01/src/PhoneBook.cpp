@@ -6,7 +6,7 @@
 /*   By: rkrechun <rkrechun@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 13:33:20 by rkrechun          #+#    #+#             */
-/*   Updated: 2024/12/05 14:18:40 by rkrechun         ###   ########.fr       */
+/*   Updated: 2024/12/05 15:26:10 by rkrechun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void PhoneBook :: addContact()
 	}
 	else{
 		for (int i = 0; i < 7; i++)
-			m_contacts[i] = m_contacts[i+1];
+			m_contacts[i] = m_contacts[i + 1];
 		m_contacts[7] = newContact;
 	}
 	std:: cout << GREEN "Contact added succesfully!" RESET << std::endl;
