@@ -10,3 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../inc/Zombie.hpp"
+
+int main() {
+    Zombie stackZombie("stackZombie");
+    Zombie *heapZombie;
+
+    stackZombie.announce();
+    heapZombie = newZombie("heapZombie");
+    heapZombie->announce();
+    randomChump("randomZombie");
+    delete heapZombie;
+
+    return 0;
+
+}
