@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/06 11:51:40 by rkrechun          #+#    #+#             */
-/*   Updated: 2025/01/08 13:04:29 by rostik           ###   ########.fr       */
+/*   Created: 2025/01/06 15:37:43 by rostik            #+#    #+#             */
+/*   Updated: 2025/01/06 17:00:47 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/Zombie.hpp"
+#include "../inc/HumanA.hpp"
 
-Zombie* zombieHorde(int N, std::string name){
-    Zombie* horde = new Zombie[N];
-
-    for (int i = 0; i < N; i++) {
-        horde[i].nameZombie(name);
-        std::cout << i + 1 << ".";
-        horde[i].announce();
-    }
-    return(horde);
+HumanA::HumanA(std::string n, Weapon &w): _name(n), _weapons(w) {
+    
 }
+
+HumanA::~HumanA(){
+
+}
+
+void HumanA::attack(){
+    std::cout << _name << " attack with their " << _weapons.getType() << std::endl;
+}
+

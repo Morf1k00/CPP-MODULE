@@ -5,18 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/06 11:51:40 by rkrechun          #+#    #+#             */
-/*   Updated: 2025/01/08 13:04:20 by rostik           ###   ########.fr       */
+/*   Created: 2025/01/07 14:33:36 by rostik            #+#    #+#             */
+/*   Updated: 2025/01/07 14:44:51 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/Zombie.hpp"
+#include <iostream>
+#include <string>
 
 int main(){
-
-    Zombie *horde;
+    std::string a("HI THIS IS BRAIN");
+    std::string* stringPTR = &a;
+    std::string& stringREF = a;
     
-    horde = zombieHorde(5, "Zombie");
-    delete[] horde;
-    return 0;
+    std::cout<< "Value of string "<< a << std::endl;
+    std::cout<< "Value pointed to by stringPtr  " << *stringPTR <<std::endl;
+    std::cout<< "Value pointed to by stringREF  " << stringREF << std::endl;
+    
+    std::cout<< "address of string " << &a << std::endl;
+    std::cout<< "addres held by stringPTR " << stringPTR << std::endl;
+    std::cout<< "address held by stringREF " << &stringREF << std::endl;
+
 }

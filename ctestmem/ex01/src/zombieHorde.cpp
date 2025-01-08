@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/06 11:51:40 by rkrechun          #+#    #+#             */
-/*   Updated: 2025/01/08 13:04:29 by rostik           ###   ########.fr       */
+/*   Created: 2025/01/07 13:04:20 by rostik            #+#    #+#             */
+/*   Updated: 2025/01/08 13:31:49 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 Zombie* zombieHorde(int N, std::string name){
     Zombie* horde = new Zombie[N];
 
-    for (int i = 0; i < N; i++) {
+    for (int i= 0; i < N; i++){
         horde[i].nameZombie(name);
-        std::cout << i + 1 << ".";
+        std::cout << i+1 << ". ";
         horde[i].announce();
     }
     return(horde);

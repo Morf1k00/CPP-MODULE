@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rostik <rostik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/06 13:49:39 by rostik            #+#    #+#              #
-#    Updated: 2025/01/06 17:24:55 by rostik           ###   ########.fr        #
+#    Created: 2025/01/07 14:42:18 by rostik            #+#    #+#              #
+#    Updated: 2025/01/07 14:42:19 by rostik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = MoarBrainz!
+NAME = hiThisIsBrain
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
@@ -18,11 +18,8 @@ RM = rm -rf
 
 SRC_DIR = src/
 OBJ_DIR = obj/
-INC_DIR = inc/
 
-SRC = zombieHorde \
-		main \
-		Zombie 
+SRC = main
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC)))
@@ -30,14 +27,15 @@ OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC)))
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
+	@$(CC) $(FLAGS) -o $(NAME) $(OBJS)
 	@echo "$(GREEN)Program Created!$(RESET)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(FLAGS) -I$(INC_DIR) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 clean:
+	@$(RM) $(OBJS)
 	@$(RM) $(OBJ_DIR)
 	@echo "$(YELLOW)Object file delete! $(RESET)"
 

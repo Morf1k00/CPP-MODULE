@@ -23,5 +23,4 @@ int main() {
     delete heapZombie;
 
     return 0;
-
 }

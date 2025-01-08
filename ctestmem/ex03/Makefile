@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rostik <rostik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/06 13:49:39 by rostik            #+#    #+#              #
-#    Updated: 2025/01/06 17:24:55 by rostik           ###   ########.fr        #
+#    Created: 2025/01/07 15:35:15 by rostik            #+#    #+#              #
+#    Updated: 2025/01/07 15:35:17 by rostik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = MoarBrainz!
+NAME = voilence
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
@@ -20,9 +20,10 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 INC_DIR = inc/
 
-SRC = zombieHorde \
+SRC = HumanA \
 		main \
-		Zombie 
+		HumanB \
+		Weapon
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC)))
 OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC)))
