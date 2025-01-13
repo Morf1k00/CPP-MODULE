@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:20:24 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/13 14:42:58 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/13 15:54:06 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ class Fixed {
         Fixed operator*(const Fixed& rhs) const;
 
         //Increment/Decrement operators
-        Fixed operator++(); //Pre-increment
+        Fixed &operator++(); //Pre-increment
         Fixed operator++(int);//Post-increment
-        Fixed operator--();//Pre-decrement
+        Fixed &operator--();//Pre-decrement
         Fixed operator--(int);//Post-decrement
 
         //Public member Function
@@ -55,6 +55,12 @@ class Fixed {
         void setRawBits(int const raw);
         float toFloat()const;
         int toInt()const;
+
+        //Static member Function
+        static Fixed& min (Fixed& a, Fixed& b);
+        static const Fixed& min (const Fixed& a, const Fixed& b);
+        static Fixed& max (Fixed& a, Fixed& b);
+        static const Fixed& max (const Fixed& a, const Fixed& b);
 };
 
 //Non-member Overloaded Operator
