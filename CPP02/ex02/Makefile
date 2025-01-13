@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rostik <rostik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/01/13 14:05:30 by rostik            #+#    #+#              #
-#    Updated: 2025/01/13 14:06:18 by rostik           ###   ########.fr        #
+#    Created: 2025/01/13 14:19:30 by rostik            #+#    #+#              #
+#    Updated: 2025/01/13 14:19:42 by rostik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = tamuf-pnc
+NAME = nwt
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98

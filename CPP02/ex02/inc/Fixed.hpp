@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/13 13:18:35 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/13 14:00:42 by rostik           ###   ########.fr       */
+/*   Created: 2025/01/13 14:20:24 by rostik            #+#    #+#             */
+/*   Updated: 2025/01/13 14:42:58 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,41 @@ class Fixed {
     public:
         Fixed();// Construnctor
         Fixed(const Fixed& other); // copy constructor
-        Fixed(int const value); //constructor with integer
-        Fixed(float const value); // constructor with floeating point number
+        Fixed(int const intValue); //constructor with integer
+        Fixed(float const floatValue); // constructor with floeating point number
         ~Fixed(); // Destructor
 
+        //Operator overloads
         Fixed& operator=(const Fixed& rhs); // copy assigment operator overload
         
+        //Comparison Operator
+        bool operator>(const Fixed& rhs) const;
+        bool operator<(const Fixed& rhs) const;
+        bool operator>=(const Fixed& rhs) const;
+        bool operator<=(const Fixed& rhs) const;
+        bool operator==(const Fixed& rhs) const;
+        bool operator!=(const Fixed& rhs) const;
+
+        //Arithmetic Operators
+        Fixed operator+(const Fixed& rhs) const;
+        Fixed operator-(const Fixed& rhs) const;
+        Fixed operator/(const Fixed& rhs) const;
+        Fixed operator*(const Fixed& rhs) const;
+
+        //Increment/Decrement operators
+        Fixed operator++(); //Pre-increment
+        Fixed operator++(int);//Post-increment
+        Fixed operator--();//Pre-decrement
+        Fixed operator--(int);//Post-decrement
+
+        //Public member Function
         int getRawBits() const;
         void setRawBits(int const raw);
         float toFloat()const;
         int toInt()const;
 };
 
+//Non-member Overloaded Operator
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed);
 
 #endif
