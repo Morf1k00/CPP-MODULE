@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:20:24 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/13 15:54:06 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/13 16:18:02 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 
 class Fixed {
     private:
-        int _value; // value 
-        static const int _fractionalBits; // number bits
+        int _value; // Value 
+        static const int _fractionalBits; // Number bits
     public:
         Fixed();// Construnctor
-        Fixed(const Fixed& other); // copy constructor
-        Fixed(int const intValue); //constructor with integer
-        Fixed(float const floatValue); // constructor with floeating point number
+        Fixed(const Fixed& other); // Copy constructor
+        Fixed(int const intValue); //Constructor with integer
+        Fixed(float const floatValue); // Constructor with floeating point number
         ~Fixed(); // Destructor
 
         //Operator overloads

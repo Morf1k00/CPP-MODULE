@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 14:36:20 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/13 16:15:11 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/13 16:17:44 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ float Fixed::toFloat() const{
     return static_cast<float>(_value) / (1 << _fractionalBits);
 }
 
+//Comparison Operator
 std::ostream& operator<<(std::ostream& out, const Fixed& fixed){
     out << fixed.toFloat();
     return(out);
@@ -88,6 +89,7 @@ bool Fixed::operator!=(const Fixed& other) const{
     return _value != other.getRawBits();
 }
 
+//Arithmetic Operators
 Fixed Fixed::operator+(const Fixed& other)const{
     return Fixed(toFloat() + other.toFloat());
 }
@@ -106,6 +108,7 @@ Fixed Fixed::operator/(const Fixed& other)const{
     return Fixed(toFloat() / other.toFloat());
 }
 
+//Increment/Decrement operators
 Fixed &Fixed::operator++(){
     this->_value++;
     return*this;
@@ -128,6 +131,7 @@ Fixed Fixed::operator--(int){
     return tmp;
 }
 
+//Static member Function
 Fixed &Fixed::min(Fixed& a, Fixed& b){
     return (a < b ? a : b);
 }
