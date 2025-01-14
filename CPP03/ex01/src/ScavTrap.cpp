@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 15:57:22 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/14 16:31:59 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/14 17:05:35 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,9 @@ ScavTrap::ScavTrap(std::string const &name){
 
 ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy){
     *this = copy;
+    this->_hitPoint = copy._hitPoint;
+    this->_attackDamage =copy._attackDamage;
+    this->_energyPoint = copy._energyPoint;
     std::cout<< RD << "Copy constructor ScavTrap for "<< GR << _name<< YE << " called!"<< RS <<std::endl;
 }
 
