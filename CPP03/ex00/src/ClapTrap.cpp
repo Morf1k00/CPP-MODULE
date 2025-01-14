@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 13:11:59 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/14 15:56:28 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/14 17:09:54 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ ClapTrap::ClapTrap(std::string const &name){
 
 ClapTrap::ClapTrap(const ClapTrap &copy){
     *this = copy;
+    this->_hitPoint = copy._hitPoint;
+    this->_attackDamage = copy._attackDamage;
+    this->_energyPoint = copy._energyPoint;
     std::cout<< RD << "Copy constructor for "<< GR << _name<< YE << " called!"<< RS <<std::endl;
 }
 
