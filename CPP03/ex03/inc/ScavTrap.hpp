@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 14:21:18 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/15 14:21:20 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 15:18:31 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap: public ClapTrap {
+class ScavTrap: virtual public ClapTrap {
     private:
 
     public:

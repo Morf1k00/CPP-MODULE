@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 14:21:06 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/15 14:21:08 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 15:15:54 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap{
+class FragTrap : virtual public ClapTrap{
     private:
     
     public:

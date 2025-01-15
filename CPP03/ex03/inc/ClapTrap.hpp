@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 14:20:56 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/15 14:20:59 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 15:17:57 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 #define GR "\033[1;32m" // Green color
 #define YE "\033[1;33m" // Yellow color
