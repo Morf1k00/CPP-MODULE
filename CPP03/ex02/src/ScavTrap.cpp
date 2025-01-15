@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 16:44:29 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/15 12:58:24 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 14:22:28 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,3 @@ void ScavTrap::attack(const std::string &target){
 void ScavTrap::guardGate(){
     std::cout << RD << "ScavTrap with name "<< GR << _name << YE << " is now in Gate kepper mode!" << RS << std::endl;
 }
-

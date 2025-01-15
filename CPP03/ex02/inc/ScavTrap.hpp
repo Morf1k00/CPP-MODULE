@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 16:43:44 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/15 12:59:06 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 14:21:16 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,5 @@ class ScavTrap: public ClapTrap {
         void attack(const std::string &target);
         void guardGate();
 };
-
 
 #endif
