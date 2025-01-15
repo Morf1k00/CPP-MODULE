@@ -6,7 +6,26 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 16:43:42 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/14 16:43:43 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/15 13:34:15 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
+#include "ClapTrap.hpp"
+
+class FragTrap : public ClapTrap{
+    private:
+    
+    public:
+        FragTrap();
+        FragTrap(std::string const &name);
+        FragTrap(const FragTrap &copy);
+        FragTrap &operator=(const FragTrap &copy);
+        ~FragTrap();
+
+        // void attack(const std::string &target);
+        void highFiveGuys();
+};
+
+#endif
