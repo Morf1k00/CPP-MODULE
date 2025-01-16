@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 14:03:05 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/16 14:23:18 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/16 16:21:09 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@ Cat::Cat(){
     std::cout << "Cat constructor called!" <<std::endl;
 }
 
-Cat::Cat(const Cat &copy){
+Cat::Cat(const Cat &copy): Animal(copy){
     this->_type = copy._type;
 }
 
 Cat &Cat::operator=(const Cat &copy){
     _type = copy._type;
+    std::cout << "Cat copy assigment operator called!" << std::endl;
     return *this;
 }
 

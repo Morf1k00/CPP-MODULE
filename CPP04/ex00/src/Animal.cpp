@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 13:50:01 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/16 14:02:56 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/16 16:23:29 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Animal::~Animal(){
 }
 
 void Animal::makeSound() const {
-    std::cout << "Animal makes a sounds!" << std::endl;
+    std::cout << "Animal make a sounds!" << std::endl;
 }
 
 std::string Animal::getType() const{

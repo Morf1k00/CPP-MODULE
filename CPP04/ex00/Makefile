@@ -6,7 +6,7 @@
 #    By: rostik <rostik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/16 13:19:04 by rostik            #+#    #+#              #
-#    Updated: 2025/01/16 13:19:38 by rostik           ###   ########.fr        #
+#    Updated: 2025/01/16 16:20:15 by rostik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ INC_DIR = inc/
 SRC = Animal \
 		Cat \
 		Dog \
+		WrongAnimal \
+		WrongCat \
 		main 
 
 SRCS = $(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC)))
