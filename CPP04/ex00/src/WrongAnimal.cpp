@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 14:26:55 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/16 16:21:46 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/16 16:34:54 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 WrongAnimal::WrongAnimal(){
     _type = "WrongAnimal";
-    std::cout << "WrongAnimal constructor called!"<< std::endl;
+    std::cout << BL "WrongAnimal constructor called!"<< std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &copy){
     this->_type = copy._type;
-    std::cout << "WrongAnimal copy constructor called!" <<std::endl;
+    std::cout << BL "WrongAnimal copy constructor called!" RS <<std::endl;
 }
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &copy){
     _type = copy._type;
-    std::cout << "WrongAnimal copy asiigment operator called!" <<std::endl;
+    std::cout << BL "WrongAnimal copy asiigment operator called!" RS <<std::endl;
     return *this;
 }
 
 WrongAnimal::~WrongAnimal(){
-    std::cout << "WrongAnimal destructor called!" <<std::endl;
+    std::cout << BL "WrongAnimal destructor called!" RS <<std::endl;
 }
 
 void WrongAnimal::makeSound() const{
-    std::cout << "wrongAnimal make a sounds!" <<std::endl;
+    std::cout << BL "wrongAnimal make a sounds!" RS <<std::endl;
 }
 
 std::string WrongAnimal::getType() const{

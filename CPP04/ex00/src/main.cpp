@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 16:10:51 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/16 16:29:12 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/16 16:38:57 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int main(){
     const WrongAnimal* wrongmeta = new WrongAnimal();
     const WrongAnimal* l = new WrongCat();
 
-    std::cout << meta->getType() << " " <<std::endl;
-    std::cout << j->getType() << " " <<std::endl;
-    std::cout << i->getType() << " " <<std::endl;
+    std::cout << GR << meta->getType() << RS << " " <<std::endl;
+    std::cout << RD << j->getType() << RS << " " <<std::endl;
+    std::cout << YE << i->getType() << RS << " " <<std::endl;
 
     meta->makeSound();
     j->makeSound();
@@ -35,10 +35,10 @@ int main(){
     delete j;
     delete i;
 
-    std::cout << "---- WrongAnimal test ----" << std::endl;
+    std::cout << CY "---- WrongAnimal test ----" << std::endl;
 
-    std::cout << wrongmeta->getType() << " " << std::endl;
-    std::cout << l->getType() << " " << std::endl;
+    std::cout << BL <<wrongmeta->getType() << RS << " " << std::endl;
+    std::cout << MG <<l->getType() << RS << " " << std::endl;
 
     wrongmeta->makeSound();
     l->makeSound();
