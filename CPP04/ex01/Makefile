@@ -6,11 +6,11 @@
 #    By: rostik <rostik@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/21 16:36:51 by rostik            #+#    #+#              #
-#    Updated: 2025/01/21 16:37:06 by rostik           ###   ########.fr        #
+#    Updated: 2025/01/21 17:59:38 by rostik           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Animal
+NAME = Brain
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
