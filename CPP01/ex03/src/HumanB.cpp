@@ -6,13 +6,13 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 15:37:46 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/06 17:07:44 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/22 17:45:56 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/HumanB.hpp"
 
-HumanB::HumanB (std::string n): _name(n) {
+HumanB::HumanB (std::string n): _name(n), _weapons(NULL){
 
 }
 

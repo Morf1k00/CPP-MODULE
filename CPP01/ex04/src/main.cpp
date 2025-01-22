@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/06 17:45:43 by rostik            #+#    #+#             */
-/*   Updated: 2025/01/08 18:06:42 by rostik           ###   ########.fr       */
+/*   Updated: 2025/01/22 17:46:30 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int main(int arc, char **argv){
     {
         i = 0;
         while(line.find(s1) != std::string::npos){
+            i = line.find(s1, i);
             line.erase(i, s1.length());
             line.insert(i, s2);
             i+= s2.length();
