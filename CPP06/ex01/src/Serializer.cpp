@@ -6,7 +6,7 @@
 /*   By: rostik <rostik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 14:17:24 by rostik            #+#    #+#             */
-/*   Updated: 2025/04/15 14:56:27 by rostik           ###   ########.fr       */
+/*   Updated: 2025/04/15 15:26:53 by rostik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,10 @@ Serializer &Serializer::operator=(const Serializer &other){
     if(this!= &other)
         *this = other;
     return (*this);
+}
 
+Serializer::~Serializer(){
+    std::cout << "Serializer destructor called!" << std::endl;
 }
 
 uintptr_t Serializer::serialize(Data* ptr) {
